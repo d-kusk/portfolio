@@ -1,0 +1,131 @@
+body {
+  background-color: #fefefe;
+  font-family: "游ゴシック", YuGothic,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+// エリア ########################
+.main-visual {
+  background-color: $themeCo;
+  padding: 100px 0;
+
+  h1,
+  p {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+main > section {// 後で構造やclass名を変更
+  padding: 50px 0;
+}
+
+.profile {
+  dl {
+    @include clearfix;
+
+    dt {
+      display: block;
+      width: 30%;
+      float: left;
+    }
+    dd {
+      display: block;
+      width: 70%;
+      float: left;
+    }
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .profile-name {
+    text-align: center;
+  }
+}
+
+#skill,
+#contact {
+  background-color: #eaeaea;
+}
+
+#skill {
+  padding: 50px;
+}
+
+.think {
+  padding: 50px 0;
+}
+
+.think-title {
+  text-align: center;
+}
+
+.groval-footer {
+  background-color: $themeCo;
+  padding: 20px 0 40px;
+  text-align: center;
+  color: #fff;
+}
+
+// パーツ ##########################
+.section-title,
+.section-title+p {
+  text-align: center;
+}
+
+.profile-image {
+  @include border-radius(50%);
+}
+
+// Fluid Image
+img {
+  max-width: 100%;
+}
+
+.skill-list {
+  dd {
+    color: #b4b2b9;
+    margin-left: 1em;
+  }
+}
+
+.portfolio-item__title {
+  margin: 5px 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.portfolio-item__thumbnail {
+  img {
+    &:hover {
+      @include filter(brightness(0.7));
+    }
+  }
+}
+
+.tech {
+  @include clearfix;
+
+  p {
+    display: inline;
+    font-weight: 500;
+    font-size: .8em;
+    float: left;
+  }
+  li {
+    margin-left: .4em;
+    font-size: .8em;
+  }
+}
+
+// single ############
+.production-title {
+  font-size: 1.8em;
+}
+
+.comment-title {
+  font-size: 1.6em;
+}
+
+.data-title {
+  @extend .comment-title;
+}

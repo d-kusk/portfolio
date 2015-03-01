@@ -1,0 +1,44 @@
+@import "settings";
+@import "compass";
+// @import "foundation";// Foundationのファイル(どこかは分からん)をすべて読み込む
+@import "variable";// 変数
+
+// Or selectively include components
+// @import 
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+@import "foundation/components/breadcrumbs";
+//   "foundation/components/button-groups",
+@import "foundation/components/buttons";
+//   "foundation/components/clearing",
+@import "foundation/components/dropdown";
+@import "foundation/components/dropdown-buttons";
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+@import "foundation/components/grid";
+@import "foundation/components/inline-lists";
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+@import "foundation/components/pagination";
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+@import "foundation/components/top-bar";
+@import "foundation/components/type";
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+@import "style";// 独自スタイル
