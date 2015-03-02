@@ -13,7 +13,7 @@
         <ul class="title-area">
           <li class="name">
             <h1>
-              <a href="/"><?php bloginfo('name'); ?></a>
+              <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
             </h1>
           </li>
           <li class="toggle-topbar menu-icon">
@@ -22,12 +22,10 @@
         </ul>
         <section class="top-bar-section">
           <ul class="right">
-            <li class="active">
-              <a href="#about">About me</a>
-            </li>
-            <li>
-              <a href="#">ナビゲーション</a>
-            </li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact">Skill</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </section>
       </nav>
