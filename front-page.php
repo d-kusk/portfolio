@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <div class="main-visual">
-      <h1 class="section-title">Daisuke's Portfolio</h1>
-      <p>大阪の大学生小西大祐のポートフォリオサイト</p>
+      <h1 class="section-title"><?php bloginfo('name'); ?></h1>
+      <p><?php bloginfo('description'); ?></p>
     </div>
     <main>
       <section id="about">
