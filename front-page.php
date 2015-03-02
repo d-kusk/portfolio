@@ -120,10 +120,17 @@
         <h2 class="section-title">Portfolio</h2>
         <p>これまでに作ったWebサイトやポスターなど</p>
         <div class="row">
+        <?php 
+        if (have_posts()) :
+          while (have_posts()) :
+            the_post();
+        ?>
           <div class="portfolio-item small-12 medium-6 large-4 columns">
-            <a class="portfolio-item__thumbnail" href="#"><img alt="作品のサムネイル" height="422" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss__medium.png" width="630" /></a>
+            <a class="portfolio-item__thumbnail" href="<?php the_permalink(); ?>">
+              <img alt="作品のサムネイル" height="422" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss__medium.png" width="630" />
+            </a>
             <p class="portfolio-item__title">
-              <a href="#">作品タイトル</a>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </p>
             <div class="tech">
               <p>使用技術</p>
@@ -132,6 +139,10 @@
               </ul>
             </div>
           </div>
+        <?php
+          endwhile;
+        endif;
+        ?>
         </div>
         <div class="row">
           <div class="small-5 small-centered medium-4 columns">
