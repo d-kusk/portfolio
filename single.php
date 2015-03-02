@@ -2,7 +2,7 @@
     <main role="main">
       <div class="row">
         <div class="large-12 columns">
-          <img alt="作品のスクリーンショット" height="510" src="images/portfolio-ss__large.png" width="917" />
+          <img alt="作品のスクリーンショット" height="510" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss__large.png" width="917" />
           <h1 class="production-title">ココに作品のタイトルが表示されます。</h1>
           <p>URL: <a href="#">http://google.com</a></p>
         </div>

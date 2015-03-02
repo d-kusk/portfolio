@@ -4,8 +4,8 @@
         <small>&copy; 2015 Daisuke's Portfolio</small>
       </p>
     </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/foundation.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
   </body>
 </html>

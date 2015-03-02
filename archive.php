@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <div class="row">
       <div class="portfolio-item small-12 medium-6 large-4 columns">
-        <a class="portfolio-item__thumbnail" href="#"><img alt="作品のサムネイル" height="182" src="images/portfolio-ss.png" width="272" /></a>
+        <a class="portfolio-item__thumbnail" href="#"><img alt="作品のサムネイル" height="182" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss.png" width="272" /></a>
         <p class="portfolio-item__title"><a href="#">作品タイトル</a></p>
         <div class="tech">
           <p>使用技術</p>

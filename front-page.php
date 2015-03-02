@@ -10,7 +10,7 @@
         <section class="profile">
           <div class="row">
             <div class="small-6 small-centered medium-4 medium-offset-1 medium-uncentered columns">
-              <img alt="小西大祐の画像" class="profile-image" height="262" src="images/daisuke.png" width="263" />
+              <img alt="小西大祐の画像" class="profile-image" height="262" src="<?php echo get_stylesheet_directory_uri(); ?>/images/daisuke.png" width="263" />
             </div>
             <div class="medium-7 columns">
               <div class="row">
@@ -121,7 +121,7 @@
         <p>これまでに作ったWebサイトやポスターなど</p>
         <div class="row">
           <div class="portfolio-item small-12 medium-6 large-4 columns">
-            <a class="portfolio-item__thumbnail" href="#"><img alt="作品のサムネイル" height="422" src="images/portfolio-ss__medium.png" width="630" /></a>
+            <a class="portfolio-item__thumbnail" href="#"><img alt="作品のサムネイル" height="422" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss__medium.png" width="630" /></a>
             <p class="portfolio-item__title">
               <a href="#">作品タイトル</a>
             </p>
@@ -134,28 +134,31 @@
           </div>
         </div>
         <div class="row">
-          <div class="small-6 small-offset-3 medium-3 medium-offset-5 columns">
+          <div class="small-5 small-centered medium-4 columns">
             <a class="btn-more button round" href="#">もっと見る</a>
           </div>
         </div>
       </section>
       <section id="contact">
         <div class="row">
-          <div class="medium-8 medium-offset-2 columns">
+          <div class="medium-8 medium-centered columns">
             <h2 class="section-title">Contact</h2>
             <p>現在就職活動中です。ご意見・ご感想お問い合わせ等ございましたら、下記フォームまたはskydai1151*gmail.com(*を@に変える)まで気軽にご連絡ください。</p>
             <form>
               <div class="row">
                 <div class="medium-4 columns">
-                  <label for="name">お名前</label><input id="name" placeholder="ココに名前を入力" type="text" />
+                  <label for="name">お名前</label>
+                  <input id="name" placeholder="ココに名前を入力" type="text" />
                 </div>
                 <div class="medium-8 columns">
-                  <label for="mail">メールアドレス</label><input id="mail" placeholder="メールアドレス" type="text" />
+                  <label for="mail">メールアドレス</label>
+                  <input id="mail" placeholder="メールアドレス" type="text" />
                 </div>
               </div>
               <div class="row">
                 <div class="medium-12 columns">
-                  <label for="contact-content">お問い合せ内容</label><textarea id="contact-content" placeholder="お問い合わせ内容を入力" rows="5"></textarea>
+                  <label for="contact-content">お問い合せ内容</label>
+                  <textarea id="contact-content" placeholder="お問い合わせ内容を入力" rows="5"></textarea>
                 </div>
               </div>
               <div class="row">

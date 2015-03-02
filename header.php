@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Daisuke's Portfolio | 大阪の大学生小西大祐のポートフォリオサイト</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link href="css/app.css" rel="stylesheet" />
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
   </head>
   <body>
