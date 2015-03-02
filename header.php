@@ -22,10 +22,18 @@
         </ul>
         <section class="top-bar-section">
           <ul class="right">
+            <?php
+            if (is_front_page()) :
+            ?>
             <li><a href="#about">About me</a></li>
             <li><a href="#contact">Skill</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+            <?php
+            else :
+            ?>
+            <li><a href="<?php bloginfo('url'); ?>">Homeに戻る</a></li>
+            <?php endif; ?>
           </ul>
         </section>
       </nav>
