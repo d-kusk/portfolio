@@ -11,7 +11,7 @@ html lang="ja"
     / script src="js/modernizr.js"
   body
     header.groval-header
-      nav.top-bar.data-topbar role="navigation"
+      nav.top-bar*{"data-topbar"=>"", "role"=>"navigation"}
         ul.title-area
           li.name
             h1
@@ -25,11 +25,9 @@ html lang="ja"
           ul.right
             li.active
               a href="#about" About me
-            - 3.times {
             li
               a href="#" ナビゲーション
-            - }
-      
+
     .main-visual
       h1.section-title Daisuke's Portfolio
       p 大阪の大学生小西大祐のポートフォリオサイト
@@ -133,7 +131,6 @@ html lang="ja"
         h2.section-title Portfolio
         p これまでに作ったWebサイトやポスターなど
         .row
-          - 6.times {
           .portfolio-item.small-12.medium-6.large-4.columns
             a.portfolio-item__thumbnail href="#"
               img src="images/portfolio-ss__medium.png" width="630" height="422" alt="作品のサムネイル"/
@@ -142,10 +139,7 @@ html lang="ja"
             .tech
               p 使用技術
               ul.inline-list
-                - 4.times {
                 li タグ,
-                - }
-          - }
         .row
           .small-6.small-offset-3.medium-3.medium-offset-5.columns
             a href="#" class="btn-more button round" もっと見る
