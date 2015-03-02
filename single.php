@@ -10,11 +10,13 @@
           <img alt="作品のスクリーンショット" height="510" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss__large.png" width="917" />
           <h1 class="production-title"><?php the_title(); ?></h1>
           <?php 
+          if (in_category('webdesign')) :
           $key="url";
           ?>
-          <p>URL: <a href="<?php echo get_post_meta($post->ID, $key, true);?>">
-          <?php
+          <p>URL: <a href="<?php echo get_post_meta($post->ID, $key, true);?>" target="_blank">
+          <?php 
           echo get_post_meta($post->ID, $key, true);
+          endif;
           ?>
           </a></p>
         </div>
