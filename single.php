@@ -21,7 +21,17 @@
           </dl>
           <dl>
             <dt>使用した技術</dt>
-            <dd>HTML5, CSS3, jQuery, WordPress</dd>
+            <dd>
+            <?php
+            $posttags = get_the_tags();
+            
+            if ($posttags) {
+              foreach($posttags as $tag) {
+                echo $tag->name . ', ';
+              }
+            }
+            ?>
+            </dd>
           </dl>
           <dl>
             <dt>制作期間</dt>

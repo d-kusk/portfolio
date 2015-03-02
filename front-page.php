@@ -135,7 +135,15 @@
             <div class="tech">
               <p>使用技術</p>
               <ul class="inline-list">
-                <li>タグ,</li>
+                <?php
+                $posttags = get_the_tags();
+                
+                if ($posttags) {
+                  foreach($posttags as $tag) {
+                    echo '<li>' . $tag->name . ', </li>';
+                  }
+                }
+                ?>
               </ul>
             </div>
           </div>
