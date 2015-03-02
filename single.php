@@ -1,5 +1,10 @@
 <?php get_header(); ?>
     <main role="main">
+      <ul class="breadcrumbs">
+        <li><a href="<?php echo get_option('home'); ?>">HOME</a></li>
+        <li><a href="<?php $cat = get_the_category(); $cat = $cat[0]; echo get_category_link( $cat->term_id ); ?>"><?php echo $cat->cat_name; ?></a></li>
+        <li><?php the_title(''); ?></li>
+      </ul>
       <?php 
       if (have_posts()) :
         while (have_posts()) :

@@ -1,14 +1,39 @@
 <?php get_header(); ?>
+    <ul class="breadcrumbs">
+      <li><a href="<?php echo get_option('home'); ?>">HOME</a></li>
+      <?php foreach ( array_reverse(get_post_ancestors($post->ID)) as $parid ) { ?>
+      <li><a href="<?php echo get_page_link( $parid );?>" title="<?php echo get_page($parid)->post_name; ?>">
+      <?php echo get_page($parid)->post_name; ?></a></li>
+      <?php } ?>
+      <li><?php the_title(''); ?></li>
+    </ul>
     <div class="row">
+      <?php 
+      if (have_posts()) :
+        while (have_posts()) :
+          the_post();
+      ?>
       <div class="portfolio-item small-12 medium-6 large-4 columns">
         <a class="portfolio-item__thumbnail" href="#"><img alt="作品のサムネイル" height="182" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss.png" width="272" /></a>
-        <p class="portfolio-item__title"><a href="#">作品タイトル</a></p>
+        <p class="portfolio-item__title"><a href="#"><?php the_title(); ?></a></p>
         <div class="tech">
           <p>使用技術</p>
           <ul class="inline-list">
-            <li>タグ,</li>
+            <?php
+            $posttags = get_the_tags();
+            
+            if ($posttags) {
+              foreach($posttags as $tag) {
+                echo '<li>' . $tag->name . ', </li>';
+              }
+            }
+            ?>
           </ul>
         </div>
+      <?php
+        endwhile;
+      endif;
+      ?>
       </div>
     </div>
     <div class="row">
