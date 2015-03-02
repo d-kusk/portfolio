@@ -127,7 +127,10 @@
         ?>
           <div class="portfolio-item small-12 medium-6 large-4 columns">
             <a class="portfolio-item__thumbnail" href="<?php the_permalink(); ?>">
-              <img alt="作品のサムネイル" height="422" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss__medium.png" width="630" />
+              <?php
+              if (has_post_thumbnail())
+                the_post_thumbnail('medium');
+              ?>
             </a>
             <p class="portfolio-item__title">
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

@@ -12,7 +12,10 @@
       ?>
       <div class="row">
         <div class="large-12 columns">
-          <img alt="作品のスクリーンショット" height="510" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss__large.png" width="917" />
+          <?php
+          if (has_post_thumbnail())
+            the_post_thumbnail('large');
+          ?>
           <h1 class="production-title"><?php the_title(); ?></h1>
           <?php 
           if (in_category('webdesign')) :

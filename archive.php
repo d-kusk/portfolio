@@ -14,7 +14,12 @@
           the_post();
       ?>
       <div class="portfolio-item small-12 medium-6 large-4 columns">
-        <a class="portfolio-item__thumbnail" href="#"><img alt="作品のサムネイル" height="182" src="<?php echo get_stylesheet_directory_uri(); ?>/images/portfolio-ss.png" width="272" /></a>
+        <a class="portfolio-item__thumbnail" href="#">
+          <?php
+          if (has_post_thumbnail())
+            the_post_thumbnail('medium');
+          ?>
+        </a>
         <p class="portfolio-item__title"><a href="#"><?php the_title(); ?></a></p>
         <div class="tech">
           <p>使用技術</p>
