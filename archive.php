@@ -14,13 +14,13 @@
           the_post();
       ?>
       <div class="portfolio-item small-12 medium-6 large-4 columns">
-        <a class="portfolio-item__thumbnail" href="#">
+        <a class="portfolio-item__thumbnail" href="<?php the_permalink(); ?>">
           <?php
           if (has_post_thumbnail())
             the_post_thumbnail('medium');
           ?>
         </a>
-        <p class="portfolio-item__title"><a href="#"><?php the_title(); ?></a></p>
+        <p class="portfolio-item__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
         <div class="tech">
           <p>使用技術</p>
           <ul class="inline-list">
