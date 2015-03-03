@@ -28,6 +28,7 @@
             <li><a href="#about" class="scroll">About me</a></li>
             <li><a href="#skill" class="scroll">Skill</a></li>
             <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+            <li><a href="http://peng-note.com" target="_blank">Blog</a></li>
             <li><a href="#contact" class="scroll">Contact</a></li>
             <?php
             else :
