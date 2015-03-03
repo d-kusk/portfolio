@@ -9,7 +9,9 @@ function footer_widgets_init() {
   register_sidebar(array(
    'name' => 'コンタクトフォームウィジェット',
    'description' => 'お問い合わせフォームを設置するウィジェット',
-   'id' => 'contact-widget'
+   'id' => 'contact-widget',
+   'before_widget' => '',
+   'after_widget' => '',
   ));
 }
 add_action( 'widgets_init', 'footer_widgets_init' );
