@@ -13,3 +13,22 @@ function footer_widgets_init() {
   ));
 }
 add_action( 'widgets_init', 'footer_widgets_init' );
+
+// タクソノミーの実装
+function portfolio_genre_init() {
+  // 新規分類を作成
+  register_taxonomy(
+    'portfolio_genre',
+    'post',
+    array(
+      'label' => __( '作品ジャンル' ),
+      'rewrite' => array( 'slug' => 'genre' ),
+      'hierarchical' => true, // 階層構造(カテゴリーっぽいUIに変わる)
+      // 'capabilities' => array(
+      //   'assign_terms' => 'edit_guides',
+      //   'edit_terms' => 'publish_guides'
+      // )
+    )
+  );
+}
+add_action( 'init', 'portfolio_genre_init' );

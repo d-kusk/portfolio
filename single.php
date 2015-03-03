@@ -38,17 +38,12 @@
           <h2 class="data-title">Data</h2>
           <dl class="category">
             <dt>カテゴリー</dt>
-            <dd>
             <?php
-            $postcat = get_the_category();
-            
-            if ($postcat) {
-              foreach($postcat as $cat) {
-                echo $cat->name;
-              }
-            }
-            ?>
-            </dd>
+            if ( $terms = get_the_terms($post->ID, 'portfolio_genre') ) {
+                foreach ( $terms as $term ) {
+                    echo '<dd>' . esc_html($term->name) . '</dd>';
+                }
+            } ?>
           </dl>
           <dl>
             <dt>使用した技術</dt>
