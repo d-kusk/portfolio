@@ -26,7 +26,7 @@
             if (is_front_page()) :
             ?>
             <li><a href="#about">About me</a></li>
-            <li><a href="#contact">Skill</a></li>
+            <li><a href="#skill">Skill</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <?php
