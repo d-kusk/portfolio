@@ -2,7 +2,8 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+    <title>
+    <?php if ( !is_home() ) {wp_title( '|', true, 'right' );} elseif (is_404()) { ?>ページが見つかりませんでした。 | <?php }bloginfo('name');?></title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet" />
