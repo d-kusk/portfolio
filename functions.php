@@ -1,8 +1,8 @@
 <?php
 // アイキャッチ画像
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'large', 916, 510, true );
-add_image_size( 'medium', 630, 422, true );
+add_image_size( 'large', 916, 510, false );
+add_image_size( 'medium', 630, 422, false );
 
 // ウィジェットの有効化
 function footer_widgets_init() {
