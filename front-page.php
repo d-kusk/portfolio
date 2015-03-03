@@ -157,7 +157,11 @@
         </div>
         <div class="row">
           <div class="small-5 small-centered medium-4 columns">
-            <a class="btn-more button round" href="#">もっと見る</a>
+            <?php
+            $category_id = get_cat_ID( 'Portfolio' );// 指定したカテゴリーの ID を取得
+            $category_link = get_category_link( $category_id );// このカテゴリーの URL を取得
+            ?>
+            <a class="btn-more button round" href="<?php echo esc_url( $category_link );?>">もっと見る</a>
           </div>
         </div>
       </section>
