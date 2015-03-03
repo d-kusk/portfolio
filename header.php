@@ -25,10 +25,10 @@
             <?php
             if (is_front_page()) :
             ?>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class="scroll">About me</a></li>
+            <li><a href="#skill" class="scroll">Skill</a></li>
+            <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+            <li><a href="#contact" class="scroll">Contact</a></li>
             <?php
             else :
             ?>
