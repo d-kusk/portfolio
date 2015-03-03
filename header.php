@@ -8,6 +8,7 @@
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <?php get_template_part('header_ogp'); ?>
   </head>
   <body>
     <header class="groval-header">
