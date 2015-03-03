@@ -166,7 +166,16 @@
           <div class="medium-8 medium-centered columns">
             <h2 class="section-title">Contact</h2>
             <p>現在就職活動中です。ご意見・ご感想お問い合わせ等ございましたら、下記フォームまたはskydai1151*gmail.com(*を@に変える)まで気軽にご連絡ください。</p>
-            <form>
+            <?php
+            if ( is_active_sidebar('contact-widget') ) :
+              dynamic_sidebar( 'contact-widget' );
+            else: ?>
+            <div class="widget">
+              <h2>No Widget</h2>
+              <p>現在、ウィジェットが設定されていません。</p>
+            </div>
+            <?php endif; ?>
+            <!-- <form>
               <div class="row">
                 <div class="medium-4 columns">
                   <label for="name">お名前</label>
@@ -188,7 +197,7 @@
                   <a class="button expand" href="#">送信</a>
                 </div>
               </div>
-            </form>
+            </form> -->
           </div>
         </div>
       </section>
