@@ -35,28 +35,17 @@
             ?>
           </ul>
         </div>
+      </div>
       <?php
         endwhile;
       endif;
       ?>
-      </div>
     </div>
     <div class="row">
-      <div class="small-6 small-centered medium-3 medium-uncentered columns">
+      <div class="small-6 small-centered medium-3 medium-centered columns">
         <div class="pagination-centered">
           <ul class="pagination">
-            <li class="arrow unavailable">
-              <a href="#">&laquo;</a>
-            </li>
-            <li class="current">
-              <a href="#">1</a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li class="arrow">
-              <a href="#">&raquo;</a>
-            </li>
+            <?php pagerNavi($wp_query->max_num_pages,$paged); ?>
           </ul>
         </div>
       </div>
