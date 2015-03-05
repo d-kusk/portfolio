@@ -157,7 +157,7 @@
         ?>
         </div>
         <div class="row">
-          <div class="small-5 small-centered medium-3 columns">
+          <div class="small-7 small-centered medium-3 columns">
             <?php
             $category_id = get_cat_ID( 'Portfolio' );// 指定したカテゴリーの ID を取得
             $category_link = get_category_link( $category_id );// このカテゴリーの URL を取得
