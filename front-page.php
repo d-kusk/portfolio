@@ -68,11 +68,11 @@
               <h3>Design</h3>
               <dl>
                 <dt>Photoshop</dt>
-                <dd>カンプ制作や簡単な写真のレタッチに使用しています。</dd>
+                <dd>Webサイトのデザインカンプ作成や簡単な写真のレタッチに使用しています。</dd>
               </dl>
               <dl>
                 <dt>Illustrator</dt>
-                <dd>サイトのロゴやメインビジュアルなどの素材やカンプ製作時に使用しています。</dd>
+                <dd>Webサイトのロゴやメインビジュアルなどの素材やデザインカンプ作成時に使用しています。</dd>
               </dl>
             </div>
             <div class="skill-list medium-4 columns">
@@ -98,7 +98,7 @@
               <h3>Other</h3>
               <dl>
                 <dt>Git</dt>
-                <dd>bxsliderやheightlineなどのプラグインを利用したコーディングをする事ができます。</dd>
+                <dd>commitやbranch、pushなどの基本操作が出来ます。</dd>
               </dl>
               <dl>
                 <dt>Sass/LESS</dt>
@@ -110,7 +110,7 @@
               </dl>
               <dl>
                 <dt>WorPress</dt>
-                <dd>ブログやプロジェクトサイトのカスタムテーマを作成して使用しています。</dd>
+                <dd>個人運用のブログや所属活動のサイトでカスタムテーマを作成して使用しています。</dd>
               </dl>
             </div>
           </div>
@@ -179,29 +179,6 @@
               <p>現在、ウィジェットが設定されていません。</p>
             </div>
             <?php endif; ?>
-            <!-- <form>
-              <div class="row">
-                <div class="medium-4 columns">
-                  <label for="name">お名前</label>
-                  <input id="name" placeholder="ココに名前を入力" type="text" />
-                </div>
-                <div class="medium-8 columns">
-                  <label for="mail">メールアドレス</label>
-                  <input id="mail" placeholder="メールアドレス" type="text" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="medium-12 columns">
-                  <label for="contact-content">お問い合せ内容</label>
-                  <textarea id="contact-content" placeholder="お問い合わせ内容を入力" rows="5"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <div class="medium-12 columns">
-                  <a class="button expand" href="#">送信</a>
-                </div>
-              </div>
-            </form> -->
           </div>
         </div>
       </section>
