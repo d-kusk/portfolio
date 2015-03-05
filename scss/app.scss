@@ -1,7 +1,7 @@
 @import "settings";
 @import "compass";
 // @import "foundation";// Foundationのファイル(どこかは分からん)をすべて読み込む
-@import "variable";// 変数
+@import "_variable";// 変数
 
 // Or selectively include components
 // @import 
@@ -41,4 +41,4 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-@import "style";// 独自スタイル
+@import "_style.scss";// 独自スタイル
