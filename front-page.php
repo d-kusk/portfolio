@@ -9,12 +9,12 @@
         <p>私のこと</p>
         <section class="profile">
           <div class="row">
-            <div class="small-6 small-centered medium-4 medium-offset-1 medium-uncentered columns">
+            <div class="small-8 small-centered medium-4 medium-offset-1 medium-uncentered columns">
               <img alt="小西大祐の画像" class="profile-image" height="262" src="<?php echo get_stylesheet_directory_uri(); ?>/images/daisuke.png" width="263" />
             </div>
             <div class="medium-7 columns">
               <div class="row">
-                <div class="small-7 small-centered medium-7 medium-uncentered columns">
+                <div class="small-8 small-centered medium-7 medium-uncentered columns">
                   <h3 class="profile-name">
                     小西大祐<small>Konishi Daisuke</small>
                   </h3>
