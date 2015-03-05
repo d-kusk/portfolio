@@ -32,12 +32,13 @@
                       <a href="http://dsk12.tumblr.com/"><i class="fa fa-tumblr">tumblr</i></a>
                     </li>
                     <li>
-                      <a href="peng-note.com"><i class="fa fa-book">Blog</i></a>
+                      <a href="http://peng-note.com"><i class="fa fa-book">Blog</i></a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <p>1993年鹿児島生まれ京都育ち、現在は大阪の大学で情報・デザインなどの勉強をしています。所属しているダンスサークルの紹介サイトを作った事をきっかけにWebサイト制作を始め、現在はWordBenchやCSSフレームワーク勉強会などの勉強会に参加しながらWebデザインやコーディングを勉強中です。</p>
+              <p>1993年鹿児島生まれ京都育ち、現在は大阪の大学で情報・デザインを勉強しています。</p>
+              <p>所属しているダンスサークルの紹介サイトを作った事をきっかけにWebサイト制作を始め、WordBenchやCSSフレームワーク勉強会などの勉強会に参加しながらWebデザインやコーディングを勉強中です。</p>
             </div>
           </div>
           <div class="think">
@@ -45,7 +46,7 @@
               <div class="large-6 columns">
                 <section>
                   <h3 class="think-title">得意なこと</h3>
-                  <p>ユーザーのニーズを予想し、それを元にユーザーを目的の場所に誘導できるような導線を考えたデザインをすることが得意です。</p>
+                  <p>ユーザーのニーズを予想し、それを元に目的の場所に誘導できるような導線を考えたデザインをすることが得意です。</p>
                 </section>
               </div>
               <div class="large-6 columns">
