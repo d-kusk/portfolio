@@ -132,6 +132,9 @@
               if (has_post_thumbnail())
                 the_post_thumbnail('medium');
               ?>
+              <div class="hover-items">
+                <i class="hover-item fa fa-search-plus"></i>
+              </div>
             </a>
             <p class="portfolio-item__title">
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
