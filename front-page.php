@@ -4,7 +4,7 @@
       <p><?php bloginfo('description'); ?></p>
     </div>
     <main>
-      <section id="about">
+      <section id="about" class="main-section">
         <h2 class="section-title">About me</h2>
         <p>私のこと</p>
         <section class="profile">
@@ -117,7 +117,7 @@
           </div>
         </section>
       </section>
-      <section id="portfolio">
+      <section id="portfolio" class="main-section">
         <h2 class="section-title">Portfolio</h2>
         <p>これまでに作ったWebサイトやポスターなど</p>
         <div class="row">
@@ -166,7 +166,7 @@
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="main-section">
         <div class="row">
           <div class="medium-8 medium-centered columns">
             <h2 class="section-title">Contact</h2>
