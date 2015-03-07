@@ -4,6 +4,7 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'large', 916, 510, false );
 add_image_size( 'medium', 630, 422, true );
 
+// アイキャッチを切り抜く起点を左上にする
 function my_awesome_image_resize_dimensions( $payload, $orig_w, $orig_h, $dest_w, $dest_h, $crop ){
     if( false ) return $payload;
     if ( $crop ) {
@@ -30,6 +31,14 @@ function my_awesome_image_resize_dimensions( $payload, $orig_w, $orig_h, $dest_w
     return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
 }
 add_filter( 'image_resize_dimensions', 'my_awesome_image_resize_dimensions', 10, 6 );
+
+// サムネイルが出力される際に付随するwidth, heightを削除する
+add_filter( 'post_thumbnail_html', 'custom_attribute' );
+function custom_attribute( $html ){
+    // width height を削除する
+    $html = preg_replace('/(width|height)="\d*"\s/', '', $html);
+    return $html;
+}
 
 // ウィジェットの有効化
 function footer_widgets_init() {
