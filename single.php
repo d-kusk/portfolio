@@ -16,17 +16,17 @@
           if (has_post_thumbnail())
             the_post_thumbnail('large');
           ?>
-          <h1 class="production-title"><?php the_title(); ?></h1>
-          <?php 
-          if (in_category('webdesign')) :
-          $key="url";
-          ?>
-          <p>URL: <a href="<?php echo get_post_meta($post->ID, $key, true);?>" target="_blank">
-          <?php 
-          echo get_post_meta($post->ID, $key, true);
-          endif;
-          ?>
-          </a></p>
+          <header class="production-header">
+            <h1 class="production-header__title"><?php the_title(); ?></h1>
+            <?php 
+            $key="url";
+            ?>
+            <p>URL: <a href="<?php echo get_post_meta($post->ID, $key, true);?>" target="_blank">
+            <?php 
+            echo get_post_meta($post->ID, $key, true);
+            ?>
+            </a></p>
+          </header>
         </div>
       </div>
       <div class="row">

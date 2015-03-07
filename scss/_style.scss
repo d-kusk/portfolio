@@ -122,7 +122,11 @@ img {
 }
 
 // single ############
-.production-title {
+.production-header {
+  margin: 10px 0;
+}
+
+.production-header__title {
   font-size: 1.8em;
 }
 
