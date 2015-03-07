@@ -55,10 +55,6 @@ main > section {// 後で構造やclass名を変更
   padding: 50px 0;
 }
 
-.think-title {
-  text-align: center;
-}
-
 .groval-footer {
   background-color: $themeCo;
   padding: 20px 0 40px;
@@ -68,7 +64,15 @@ main > section {// 後で構造やclass名を変更
 
 // パーツ ##########################
 .section-title,
-.section-title+p {
+.skill-list h3,
+.comment-title,
+.data-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-title,
+.section-title+p,
+.think-title {
   text-align: center;
 }
 
