@@ -111,7 +111,7 @@
                 <dd>BootstrapやFoundationを使ったコーディングが出来ます。</dd>
               </dl>
               <dl>
-                <dt>WorPress</dt>
+                <dt>WordPress</dt>
                 <dd>個人のブログや所属活動のサイトで使用するテーマを0から作成しました。</dd>
               </dl>
             </div>
