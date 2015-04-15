@@ -3802,6 +3802,7 @@ img {
   display: inline;
   font-weight: 500;
   font-size: .7em;
+  margin-right: .4em;
   float: left;
 }
 .tech li {
