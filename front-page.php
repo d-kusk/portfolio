@@ -150,7 +150,7 @@
                 
                 if ($posttags) {
                   foreach($posttags as $tag) {
-                    echo '<li>' . $tag->name . ', </li>';
+                    echo '<li>' . $tag->name . '</li>';
                   }
                 }
                 ?>

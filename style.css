@@ -3801,12 +3801,15 @@ img {
 .tech p {
   display: inline;
   font-weight: 500;
-  font-size: .8em;
+  font-size: .7em;
   float: left;
 }
 .tech li {
   margin-left: .4em;
   font-size: .8em;
+}
+.tech li:not(:last-child):after {
+  content: ",";
 }
 .tech .inline-list {
   margin-left: 0;

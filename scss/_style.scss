@@ -147,13 +147,19 @@ img {
   p {
     display: inline;
     font-weight: 500;
-    font-size: .8em;
+    font-size: .7em;
     float: left;
   }
+  
   li {
     margin-left: .4em;
     font-size: .8em;
+    
+    &:not(:last-child):after {
+      content: ",";
+    }
   }
+  
   .inline-list {
     margin-left: 0;
   }
