@@ -3808,6 +3808,9 @@ img {
   margin-left: .4em;
   font-size: .8em;
 }
+.tech .inline-list {
+  margin-left: 0;
+}
 
 .production-header {
   margin: 10px 0;
