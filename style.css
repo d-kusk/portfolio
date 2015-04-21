@@ -3816,6 +3816,10 @@ img {
   margin-left: 0;
 }
 
+.btn-more-area {
+  text-align: center;
+}
+
 .production-header {
   margin: 10px 0;
 }
