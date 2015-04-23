@@ -31,6 +31,7 @@
     script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"
     script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
     <![endif]-->
+    <?php wp_head(); ?>
   </head>
   <body>
     <header class="groval-header">
@@ -64,4 +65,3 @@
         </section>
       </nav>
     </header>
-<?php wp_head(); ?>
