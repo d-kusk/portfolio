@@ -20,12 +20,16 @@
             <h1 class="production-header__title"><?php the_title(); ?></h1>
             <?php 
             $key="url";
+            $url = get_post_meta($post->ID, $key, true);
+            
+            if(empty($url) == false) :// URLの値があるときだけ表示
             ?>
-            <p>URL: <a href="<?php echo get_post_meta($post->ID, $key, true);?>" target="_blank">
+            <p>URL: <a href="<?php echo $url; ?>" target="_blank">
             <?php 
-            echo get_post_meta($post->ID, $key, true);
+            echo $url;
             ?>
             </a></p>
+            <?php endif; ?>
           </header>
         </div>
       </div>
