@@ -12,10 +12,6 @@
       ?>
       <div class="row">
         <div class="large-12 columns">
-          <?php
-          if (has_post_thumbnail())
-            the_post_thumbnail('large');
-          ?>
           <header class="production-header">
             <h1 class="production-header__title"><?php the_title(); ?></h1>
             <?php 
