@@ -26,7 +26,7 @@
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <?php get_template_part('header_ogp'); ?>
+    <?php // get_template_part('header_ogp'); ?>
     <!--[if lt IE 9]>
     script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"
     script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
