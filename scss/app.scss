@@ -1,5 +1,7 @@
-@import "settings";
+// @import "settings";
+
 @import "compass";
+
 // @import "foundation";// Foundationのファイル(どこかは分からん)をすべて読み込む
 @import "_variable";// 変数
 
@@ -13,9 +15,9 @@
 @import "foundation/components/buttons";
 //   "foundation/components/clearing",
 @import "foundation/components/dropdown";
-@import "foundation/components/dropdown-buttons";
+//   "foundation/components/dropdown-buttons";
 //   "foundation/components/flex-video",
-//   "foundation/components/forms",
+@import  "foundation/components/forms";
 @import "foundation/components/grid";
 @import "foundation/components/inline-lists";
 //   "foundation/components/joyride",
