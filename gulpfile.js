@@ -2,16 +2,19 @@
 
 var gulp     = require('gulp');
 var slim     = require("gulp-slim");
+var jade     = require('gulp-jade');
 var sass     = require('gulp-ruby-sass');
-var uncss    = require('gulp-uncss');
+var coffee   = require('gulp-coffee');
+var autoprefixer = require('gulp-autoprefixer');
 var csso     = require('gulp-csso');
+var concat   = require('gulp-concat');
 var rename   = require('gulp-rename');
 var plumber  = require('gulp-plumber');
 var uglify   = require("gulp-uglify");
 var browser  = require("browser-sync");
 
 gulp.task('slim', function(){
-  gulp.src("slim/**/*.slim")
+  gulp.src("slim/*.slim")
     .pipe(plumber())
     .pipe(slim({
       pretty: true
@@ -20,30 +23,43 @@ gulp.task('slim', function(){
     .pipe(browser.reload({stream:true}));
 });
 
-gulp.task('sass', function() {
-  gulp.src('scss/**/*.scss')
+gulp.task('jade', function() {
+  gulp.src(['./jade/*.jade', '!./jade/_*.jade'])
     .pipe(plumber())
-    .pipe(sass({
-        style: 'expanded',
-        compass : true
+    .pipe(jade({
+      pretty: true
     }))
-    .pipe(gulp.dest('css/')) 
+    .pipe(gulp.dest('./'))
     .pipe(browser.reload({stream:true}));
 });
 
-// アップロード前に実行する
-gulp.task('css-set', function() {
-    return gulp.src('css/style.css')
-        .pipe(uncss({
-            html: ['index.html']// 審査元のHTMLを記述
-        }))
-        .pipe(gulp.dest('css/'))
-        .pipe(csso())// CSSの圧縮
-        .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('css/'));
+gulp.task('sass', function () {
+    return sass('scss/', {
+      compass: true,
+      style: 'expanded'
+    })
+    .on('error', function (err) {
+      console.error('Error!', err.message);
+    })
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('css/'))
+    // .pipe(csso())
+    // .pipe(rename('style.min.css'))
+    // .pipe(gulp.dest('css/'));
+    .pipe(browser.reload({stream:true}));
 });
 
-// アップロード前に実行する
+gulp.task('coffee', function() {
+  gulp.src('./coffee/*.coffee')
+    .pipe(coffee())
+    .pipe(concat('script.min.js'))// 結合 & rename
+    .pipe(gulp.dest('./js/'))
+    .pipe(browser.reload({stream:true}));
+});
+
 gulp.task('js', function() {
   gulp.src('js/**/*.js')
     .pipe(plumber())
@@ -63,5 +79,8 @@ gulp.task("server", function() {
 
 gulp.task('watch',["server"], function () {
     gulp.watch('slim/**/*.slim', ['slim']);
+    gulp.watch('jade/**/*.jade', ['jade']);
     gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('coffee/**/*.coffee', ['coffee']);
+    gulp.watch('js/**/*.js', ['js']);
 });
