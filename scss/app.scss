@@ -1,4 +1,15 @@
-// @import "settings";
+@charset "UTF-8";
+
+/*
+Theme Name: Daisuke's Portfolio
+Theme URI: http://daisuke.upper.jp
+Author: Daisuke Konishi
+Author URI: https://wordpress.org/support/profile/daisuke-konishi
+Description: Daisuke's website theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
 
 @import "compass";
 
@@ -6,7 +17,7 @@
 @import "_variable";// 変数
 
 // Or selectively include components
-// @import 
+// @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
 //   "foundation/components/block-grid",
