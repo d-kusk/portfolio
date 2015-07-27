@@ -45,21 +45,21 @@
             <div class="row">
               <div class="large-4 columns">
                 <div class="think-image">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/web.svg" alt="">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pencil.svg" alt="Designのアイコン">
                 </div>
                 <h3 class="think-title">Design</h3>
                 <p>ユーザーのニーズを予想し、それを元にユーザーを目的の場所に誘導する導線を考えたデザインをすることが得意です。</p>
               </div>
               <div class="large-4 columns">
                 <div class="think-image">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pencil.svg" alt="">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/web.svg" alt="コードのアイコン">
                 </div>
                 <h3 class="think-title">Coding</h3>
                 <p>コンテンツの文書構造を意識し、メンテナンス性の高いコーディングを行う事を心がけています。</p>
               </div>
               <div class="large-4 columns">
                 <div class="think-image">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/settings.svg" alt="">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/settings.svg" alt="その他に関するアイコン">
                 </div>
                 <h3 class="think-title">Other</h3>
                 <p>より効率の良い作業を行ったり、やりたい事を叶えるために、その他のツールを利用しています。</p>
@@ -127,7 +127,7 @@
         <h2 class="section-title">Portfolio</h2>
         <p>これまでに作ったWebサイトやポスターなど</p>
         <div class="row">
-        <?php 
+        <?php
         if (have_posts()) :
           while (have_posts()) :
             the_post();
@@ -150,7 +150,7 @@
               <ul class="inline-list">
                 <?php
                 $posttags = get_the_tags();
-                
+
                 if ($posttags) {
                   foreach($posttags as $tag) {
                     echo '<li>' . $tag->name . '</li>';
