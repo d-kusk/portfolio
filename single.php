@@ -11,7 +11,7 @@
           the_post();
       ?>
       <div class="row">
-        <div class="large-12 columns">
+        <div class="large-12 columns" <?php post_class();?>>
           <header class="production-header">
             <h1 class="production-header__title"><?php the_title(); ?></h1>
             <?php

@@ -124,12 +124,12 @@
         <h2 class="section-title">Portfolio</h2>
         <p>これまでに作ったWebサイトやポスターなど</p>
         <div class="row">
-        <?php 
+        <?php
         if (have_posts()) :
           while (have_posts()) :
             the_post();
         ?>
-          <div class="portfolio-item small-12 medium-6 large-4 columns">
+          <div class="portfolio-item small-12 medium-6 large-4 columns" <?php post_class();?>>
             <a class="portfolio-item__thumbnail" href="<?php the_permalink(); ?>">
               <?php
               if (has_post_thumbnail())
@@ -147,7 +147,7 @@
               <ul class="inline-list">
                 <?php
                 $posttags = get_the_tags();
-                
+
                 if ($posttags) {
                   foreach($posttags as $tag) {
                     echo '<li>' . $tag->name . '</li>';

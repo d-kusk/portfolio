@@ -33,7 +33,7 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class();?>>
     <header class="groval-header">
       <nav class="top-bar" data-topbar="" role="navigation">
         <ul class="title-area">
