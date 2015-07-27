@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <ul class="breadcrumbs">
-      <li><a href="<?php echo get_option('home'); ?>">HOME</a></li>
+      <li><a href="<?php echo home_url(); ?>">HOME</a></li>
       <?php foreach ( array_reverse(get_post_ancestors($post->ID)) as $parid ) { ?>
       <li><a href="<?php echo get_page_link( $parid );?>" title="<?php echo get_page($parid)->post_name; ?>">
       <?php echo get_page($parid)->post_name; ?></a></li>
@@ -8,7 +8,7 @@
       <li><?php the_title(''); ?></li>
     </ul>
     <div class="row">
-      <?php 
+      <?php
       if (have_posts()) :
         while (have_posts()) :
           the_post();
@@ -26,7 +26,7 @@
           <ul class="inline-list">
             <?php
             $posttags = get_the_tags();
-            
+
             if ($posttags) {
               foreach($posttags as $tag) {
                 echo '<li>' . $tag->name . '</li>';

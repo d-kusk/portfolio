@@ -39,7 +39,7 @@
         <ul class="title-area">
           <li class="name">
             <h1>
-              <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+              <a href="<?php echo esc_url(home_url(); ?>"><?php bloginfo('name'); ?></a>
             </h1>
           </li>
           <li class="toggle-topbar menu-icon">
@@ -59,7 +59,7 @@
             <?php
             else :
             ?>
-            <li><a href="<?php bloginfo('url'); ?>">Homeに戻る</a></li>
+            <li><a href="<?php echo esc_url(home_url()); ?>">Homeに戻る</a></li>
             <?php endif; ?>
           </ul>
         </section>
