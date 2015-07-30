@@ -3681,6 +3681,14 @@ img {
   max-width: 100%;
 }
 
+.think-image {
+  width: 130px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #efefef;
+  border-radius: 50%;
+}
+
 .skill-list dd {
   color: #99969e;
   margin-left: 1em;
