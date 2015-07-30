@@ -42,27 +42,24 @@
             </div>
           </div>
           <div class="think">
-            <div class="row">
-              <div class="large-4 columns">
-                <div class="think-image">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pencil.svg" alt="Designのアイコン">
+          <div class="row">
+            <div class="large-10 large-centered column">
+              <div class="row">
+                <div class="large-6 columns">
+                  <div class="think-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pencil.svg" alt="Designのアイコン">
+                  </div>
+                  <h3 class="think-title">Design</h3>
+                  <p>シンプルで見易いデザインをする事で、人が触りやすいサイト作りをすることを心がけています。<br>
+                  また、ユーザーの導線を意識したコンテンツのレイアウトをすることを意識しています。</p>
                 </div>
-                <h3 class="think-title">Design</h3>
-                <p>ユーザーのニーズを予想し、それを元にユーザーを目的の場所に誘導する導線を考えたデザインをすることが得意です。</p>
-              </div>
-              <div class="large-4 columns">
-                <div class="think-image">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/web.svg" alt="コードのアイコン">
+                <div class="large-6 columns">
+                  <div class="think-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/web.svg" alt="コードのアイコン">
+                  </div>
+                  <h3 class="think-title">Coding</h3>
+                  <p>コンテンツの文書構造を意識し、メンテナンス性の高いコーディングを行う事を心がけています。</p>
                 </div>
-                <h3 class="think-title">Coding</h3>
-                <p>コンテンツの文書構造を意識し、メンテナンス性の高いコーディングを行う事を心がけています。</p>
-              </div>
-              <div class="large-4 columns">
-                <div class="think-image">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/settings.svg" alt="その他に関するアイコン">
-                </div>
-                <h3 class="think-title">Other</h3>
-                <p>より効率の良い作業を行ったり、やりたい事を叶えるために、その他のツールを利用しています。</p>
               </div>
             </div>
           </div>
