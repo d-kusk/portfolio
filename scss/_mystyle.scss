@@ -141,10 +141,17 @@ img {
 
 	.hover-item {
   	position: absolute;
-  	top: 40%;
-  	left: 40%;
-  	font-size: 3.5em;
+  	top: 45%;
+  	left: 35%;
+    padding: 3px 16px;
+    display: inline-block;
+    border: 1px solid #efefef;
+  	font-size: 1em;
   	color: #fff;
+
+    .fa {
+      margin-left: .8em;
+    }
 	}
 }
 
@@ -158,16 +165,16 @@ img {
     margin-right: .4em;
     float: left;
   }
-  
+
   li {
     margin-left: .4em;
     font-size: .8em;
-    
+
     &:not(:last-child):after {
       content: ",";
     }
   }
-  
+
   .inline-list {
     margin-left: 0;
   }

@@ -3731,10 +3731,16 @@ img {
 }
 .hover-items .hover-item {
   position: absolute;
-  top: 40%;
-  left: 40%;
-  font-size: 3.5em;
+  top: 45%;
+  left: 35%;
+  padding: 3px 16px;
+  display: inline-block;
+  border: 1px solid #efefef;
+  font-size: 1em;
   color: #fff;
+}
+.hover-items .hover-item .fa {
+  margin-left: .8em;
 }
 
 .tech:before, .tech:after {

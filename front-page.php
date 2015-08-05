@@ -136,7 +136,7 @@
                 the_post_thumbnail('medium');
               ?>
               <div class="hover-items">
-                <i class="hover-item fa fa-search-plus"></i>
+                <p class="hover-item">more<i class="fa fa-angle-right"></i></p>
               </div>
             </a>
             <p class="portfolio-item__title">
