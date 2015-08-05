@@ -123,13 +123,13 @@
       <section id="portfolio" class="main-section">
         <h2 class="section-title">Portfolio</h2>
         <p>これまでに作ったWebサイトやポスターなど</p>
-        <div class="row">
+        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
         <?php
         if (have_posts()) :
           while (have_posts()) :
             the_post();
         ?>
-          <div class="portfolio-item small-12 medium-6 large-4 columns" <?php post_class();?>>
+          <li class="portfolio-item" <?php post_class();?>>
             <a class="portfolio-item__thumbnail" href="<?php the_permalink(); ?>">
               <?php
               if (has_post_thumbnail())
@@ -156,12 +156,12 @@
                 ?>
               </ul>
             </div>
-          </div>
+          </li>
         <?php
           endwhile;
         endif;
         ?>
-        </div>
+        </ul>
         <div class="row">
           <div class="btn-more-area small-7 small-centered medium-3 columns">
             <?php
