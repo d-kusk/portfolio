@@ -1,4 +1,19 @@
 <?php
+// スタイルシートとスクリプトの読み込みコードを関数にまとめる
+function portfol_scripts() {
+	/*
+	 * wp_enqueue_script() を使って functions.js を登録・読み込みキューに追加。
+	 * jquery を依存指定し自動的に先に読み込ませる。
+	 * 20140319 というバージョン文字列を URL のクエリーストリングに付加し
+	 * バージョンの異なるファイルキャッシュがある場合は更新されるようにする。
+	 * スクリプトをフッターエリアで読み込ませる（多くの場合この設定が望ましい）。
+	*/
+	// wp_enqueue_script( 'foundation-script', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '20150813', true );
+  wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/app.js', array( 'jquery' ), '20150813', true );
+}
+// portfol_scripts() をサイト公開側で呼び出す。
+add_action( 'wp_enqueue_scripts', 'portfol_scripts' );
+
 // アイキャッチ画像
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'large', 916, 510, false );
@@ -23,10 +38,10 @@ function my_awesome_image_resize_dimensions( $payload, $orig_w, $orig_h, $dest_w
         $crop_h = $orig_h;
         $s_x = 0;
         $s_y = 0;
-        
+
         list( $new_w, $new_h ) = wp_constrain_dimensions( $orig_w, $orig_h, $dest_w, $dest_h );
     }
- 
+
     if ( $new_w >= $orig_w && $new_h >= $orig_h ) return false;
     return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
 }
