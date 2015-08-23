@@ -8,38 +8,47 @@
       <li><?php the_title(''); ?></li>
     </ul>
     <div class="row">
-      <?php
-      if (have_posts()) :
-        while (have_posts()) :
-          the_post();
-      ?>
-      <div class="portfolio-item small-12 medium-6 large-4 columns">
-        <a class="portfolio-item__thumbnail" href="<?php the_permalink(); ?>">
+      <div class="small-12 columns">
+        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
           <?php
-          if (has_post_thumbnail())
-            the_post_thumbnail('medium');
+          if (have_posts()) :
+            while (have_posts()) :
+              the_post();
           ?>
-        </a>
-        <p class="portfolio-item__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-        <div class="tech">
-          <p>使用技術</p>
-          <ul class="inline-list">
-            <?php
-            $posttags = get_the_tags();
+          <li class="portfolio-item" <?php post_class();?>>
+            <a class="portfolio-item__thumbnail" href="<?php the_permalink(); ?>">
+              <?php
+              if (has_post_thumbnail())
+                the_post_thumbnail('medium');
+              ?>
+              <div class="hover-items">
+                <p class="hover-item">more<i class="fa fa-angle-right"></i></p>
+              </div>
+            </a>
+            <p class="portfolio-item__title">
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </p>
+            <div class="tech">
+              <p>使用技術</p>
+              <ul class="inline-list">
+                <?php
+                $posttags = get_the_tags();
 
-            if ($posttags) {
-              foreach($posttags as $tag) {
-                echo '<li>' . $tag->name . '</li>';
-              }
-            }
-            ?>
-          </ul>
-        </div>
+                if ($posttags) {
+                  foreach($posttags as $tag) {
+                    echo '<li>' . $tag->name . '</li>';
+                  }
+                }
+                ?>
+              </ul>
+            </div>
+          </li>
+          <?php
+            endwhile;
+          endif;
+          ?>
+        </ul>
       </div>
-      <?php
-        endwhile;
-      endif;
-      ?>
     </div>
     <div class="row">
       <div class="small-6 small-centered medium-3 medium-centered columns">
